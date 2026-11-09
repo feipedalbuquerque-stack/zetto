@@ -11,11 +11,23 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
-<meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbyPAgGx8_ELVJvBK56ds_fruKu8e3H3yvcUIfucRHo63z0rsVSHDMrW6ry185MM-Pt7/exec">
-<style>html,body{margin:0;height:100%;background:#000;color:#888;font:14px -apple-system,system-ui,sans-serif;display:flex;align-items:center;justify-content:center}</style>
+<style>
+html,body{margin:0;min-height:100%;background:#000;color:#ddd;font:16px -apple-system,system-ui,sans-serif}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:24px;box-sizing:border-box;text-align:center}
+img{width:120px;height:120px;border-radius:26px}
+h1{font-size:22px;margin:20px 0 6px;color:#fff}
+p{margin:6px 0;color:#9a9a9a;max-width:320px;line-height:1.45}
+a.btn{display:inline-block;margin-top:22px;padding:14px 28px;border-radius:14px;background:#e11d1d;color:#fff;text-decoration:none;font-weight:600}
+</style>
 </head>
 <body>
-<p>Abrindo o Zetto Budget…</p>
-<script>location.replace("https://script.google.com/macros/s/AKfycbyPAgGx8_ELVJvBK56ds_fruKu8e3H3yvcUIfucRHo63z0rsVSHDMrW6ry185MM-Pt7/exec");</script>
+<img src="apple-touch-icon.png?v=2" alt="Zetto Budget">
+<h1>Zetto Budget</h1>
+<p>Para ter o ícone na tela inicial: toque em compartilhar e em <b>Adicionar à Tela de Início</b>.</p>
+<a class="btn" href="https://script.google.com/macros/s/AKfycbyPAgGx8_ELVJvBK56ds_fruKu8e3H3yvcUIfucRHo63z0rsVSHDMrW6ry185MM-Pt7/exec">Abrir app</a>
+<script>
+var standalone = window.navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+if (standalone) location.replace("https://script.google.com/macros/s/AKfycbyPAgGx8_ELVJvBK56ds_fruKu8e3H3yvcUIfucRHo63z0rsVSHDMrW6ry185MM-Pt7/exec");
+</script>
 </body>
 </html>
